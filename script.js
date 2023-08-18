@@ -10,7 +10,14 @@ document.addEventListener('click', e => {
     }
 });
 
-/****** */
+/******miboton boton ingresar manda al index2 */
 document.getElementById("miBoton").addEventListener("click", function() {
     window.location.href = "index2.html";
+});
+
+/******miboton2 boton ingresar manda al index3 */
+/**********aqui podrían agregarse que solo si todos los campos estan bien puede avanzar  */
+
+document.getElementById("miBoton2").addEventListener("click", function() {
+    window.location.href = "index3.html";
 });

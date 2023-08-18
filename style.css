@@ -63,6 +63,7 @@ body {
 .formulario {
     width: 400px;
     padding: 1rem;
+    border-radius: 10px;
     margin: 2rem;
     background-color: rgb(51, 51, 51, 0.602);
     text-align: center;
@@ -78,6 +79,10 @@ body {
     display: flex;
     justify-content: space-around;
     margin: auto;
+}
+
+::placeholder {
+    color: antiquewhite;
 }
 
 .border-icon {
@@ -109,7 +114,7 @@ body {
     margin-bottom: 2rem;
     background-color: transparent;
     border: none;
-    border-bottom: white thin solid;
+    border-bottom: white thin solid; /*Bordes del holder*/
     text-align: center;
     outline: none;
     padding: .2rem 0;
@@ -137,7 +142,7 @@ body {
     border: solid thin rgb(255, 255, 255);
     padding: .7rem;
     border-radius: 2rem;
-    background-color: rgb(35, 254, 10);
+    background-color: rgb(255, 255, 255);
     font-weight: 600;
     /***se cambio de 3rem a 1rem**/
     margin-top: 1rem;
@@ -146,11 +151,21 @@ body {
     color: #222;
 }
 
+
+
+
 /***agregado el hover****/
-.formulario input[type="button2"]:hover {
-    background-color: #ff0a0a;
+.formulario input[type="button"]:hover {
+    background-color: #767676;
     color: white;
 }
+
+/***agregado el hover****/
+.formulario input[type="button2"]:hover {
+    background-color: #767676;
+    color: white;
+}
+
 
 .sign-in {
     position: absolute;
@@ -166,4 +181,21 @@ body {
 .sign-up.active {
     opacity: 0;
     visibility: hidden;
+}
+
+
+
+
+
+.tooltip {
+    position: absolute;
+    background-color: #ff6961;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
 }
