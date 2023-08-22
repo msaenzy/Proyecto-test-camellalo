@@ -5,7 +5,7 @@
     index1= registrarse 
 index2= ingrese usuario y contraseña
 index3= pestaña que solo sirve para decir 'registrado con exito' y con un solo btn que te manda al index2
-    
+    NO SE COMO CENTRAR ESTA WEBADA SEND HELP
     
     -------->
 
@@ -51,13 +51,15 @@ index3= pestaña que solo sirve para decir 'registrado con exito' y con un solo 
             ---------------->
         
             <p class="cuenta-gratis">Crear una cuenta gratis</p>
-            <input type="text" id="nombre" placeholder="Nombre" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="celular" placeholder="Celular" required>
-        <input type="text" id="usuario" placeholder="Usuario" required>
-        <input type="password" id="contraseña" placeholder="Contraseña" required>
-        <input id="miBoton2" type="button" value="Registrarse" onclick="validateForm()">
-            
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <!-------->
+            <input type="cellphone" placeholder="Celular">
+            <input type="user" placeholder="Usuario">
+            <!-------->
+            <input type="password" placeholder="Contraseña">
+            <input id="miBoton2" type="button" value="Registrarse">
+
             <!---------Ingresar para abrir la ventana de Ingresar
             si ya tiene cuenta-->
             <br>
@@ -65,13 +67,35 @@ index3= pestaña que solo sirve para decir 'registrado con exito' y con un solo 
             <!--------esta puesto en el script lo que va a hacer miboton-->
             <input id="miBoton" type="button2" value="Ingresar">
         </form>
-
-       
-
-
-
     </div>
-   
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
